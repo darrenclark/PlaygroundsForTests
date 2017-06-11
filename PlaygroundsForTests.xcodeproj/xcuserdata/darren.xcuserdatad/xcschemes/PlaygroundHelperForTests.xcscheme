@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "95E86D811EED7854002685F9"
-               BuildableName = "PlaygroundsForTests.app"
-               BlueprintName = "PlaygroundsForTests"
+               BlueprintIdentifier = "95E86DD81EED8686002685F9"
+               BuildableName = "PlaygroundHelperForTests.framework"
+               BlueprintName = "PlaygroundHelperForTests"
                ReferencedContainer = "container:PlaygroundsForTests.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "95E86DEA1EED8737002685F9"
-               BuildableName = "PlaygroundsForTestsTests.xctest"
-               BlueprintName = "PlaygroundsForTestsTests"
-               ReferencedContainer = "container:PlaygroundsForTests.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "95E86D811EED7854002685F9"
-            BuildableName = "PlaygroundsForTests.app"
-            BlueprintName = "PlaygroundsForTests"
-            ReferencedContainer = "container:PlaygroundsForTests.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -61,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "95E86D811EED7854002685F9"
-            BuildableName = "PlaygroundsForTests.app"
-            BlueprintName = "PlaygroundsForTests"
+            BlueprintIdentifier = "95E86DD81EED8686002685F9"
+            BuildableName = "PlaygroundHelperForTests.framework"
+            BlueprintName = "PlaygroundHelperForTests"
             ReferencedContainer = "container:PlaygroundsForTests.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -80,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "95E86D811EED7854002685F9"
-            BuildableName = "PlaygroundsForTests.app"
-            BlueprintName = "PlaygroundsForTests"
+            BlueprintIdentifier = "95E86DD81EED8686002685F9"
+            BuildableName = "PlaygroundHelperForTests.framework"
+            BlueprintName = "PlaygroundHelperForTests"
             ReferencedContainer = "container:PlaygroundsForTests.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

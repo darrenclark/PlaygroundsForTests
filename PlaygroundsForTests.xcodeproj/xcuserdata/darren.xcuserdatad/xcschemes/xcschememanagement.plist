@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>PlaygroundHelperForTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>PlaygroundsForTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -38,6 +43,16 @@
 			<true/>
 		</dict>
 		<key>95E86DC31EED83E7002685F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>95E86DD81EED8686002685F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>95E86DEA1EED8737002685F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

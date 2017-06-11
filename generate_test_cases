@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+
+# playgrounds to generated
+PLAYGROUNDS = ["AppUI.playground"]
+OUTPUT_DIR = "PlaygroundsForTestsTests/"
+
+def generate_test_case_file playground
+	playground_swift = playground + "/contents.swift"
+	imports = []
+	contents = []
+
+	File.readlines(playground_swift).each do |line|
+		if (line.start_with? "import") || (line.start_with? "@testable import")
+			imports << line
+		else
+			contents << line
+		end
+	end
+
+	test_case_name = playground.split('.')[0] + "TestCase"
+	test_file_name = OUTPUT_DIR + test_case_name + ".swift"
+
+	File.open(test_file_name, 'w') do |f|
+		imports.each do |line|
+			f.puts line.sub("PlaygroundHelper", "PlaygroundHelperForTests")
+		end
+
+		f.puts ""
+		f.puts "class " + test_case_name + ": PlaygroundTestCase {"
+		f.puts "    override func playgroundContent() {"
+
+		contents.each do |line|
+			f.puts "        " + line
+		end
+
+		f.puts "    }"
+		f.puts "}"
+	end
+end
+
+PLAYGROUNDS.each { |playground| generate_test_case_file playground }
+
