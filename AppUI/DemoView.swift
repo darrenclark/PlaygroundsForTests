@@ -22,7 +22,7 @@ class DemoView: UIView {
     }
 
     func commonInit() {
-        subview.backgroundColor = .yellow
+        subview.backgroundColor = .red
         addSubview(subview)
     }
 

@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+source = ARGV[0]
+playground = ARGV[1] + "/contents.swift"
+
+original = File.readlines(source)
+
+result = File.readlines(playground).flat_map do |line|
+	if line.start_with? "// EDIT"
+		[line.sub("EDIT: ./edit", "SAVE: ./save")] + original + ["// ENDSAVE"]
+	else
+		[line]
+	end
+end
+
+File.open(playground, 'w') { |f|
+	result.each { |line| f.puts line }
+}
+
+`touch #{ARGV[1]}`
